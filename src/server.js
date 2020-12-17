@@ -5,6 +5,12 @@ const routes = require('./routes');
 
 const app = express();
 
+const cors = require('cors');
+
+app.use(cors({
+
+}));
+
 
 mongoose.connect('mongodb+srv://usuario1:a2GvWHRaqN19fI7u@cluster0.dbsab.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     useNewUrlParser: true,
